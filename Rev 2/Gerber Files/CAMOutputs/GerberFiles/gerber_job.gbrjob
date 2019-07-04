@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-07-04T02:40:04Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.84,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "Buck V1"
+        },
+        "Owner": "Thomas Kulin <thomask_2002-main@yahoo.ca>",
+        "Size": {
+            "X": 77.45,
+            "Y": 51.105
+        }
+    }
+}
