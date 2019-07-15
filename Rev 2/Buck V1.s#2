@@ -18001,7 +18001,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP1" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="V_IN" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="ARD_SHTDWN" library="testpad" deviceset="PTR1" device="TP20R"/>
-<part name="ARD_" library="testpad" deviceset="PTR1" device="TP20R"/>
+<part name="ARD_FB" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="ARD_CURR" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="VCC" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="ARD_VOUT" library="testpad" deviceset="PTR1" device="TP20R"/>
@@ -18223,7 +18223,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="-64.516" y="80.01" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="-62.23" y="83.82" size="1.778" layer="97"/>
 </instance>
-<instance part="ARD_" gate="G$1" x="-71.12" y="48.26" smashed="yes">
+<instance part="ARD_FB" gate="G$1" x="-71.12" y="48.26" smashed="yes">
 <attribute name="NAME" x="-72.136" y="41.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="-69.85" y="45.72" size="1.778" layer="97"/>
 </instance>
@@ -18585,7 +18585,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R_FB" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="50.8" x2="-73.66" y2="50.8" width="0.1524" layer="91"/>
 <label x="-91.44" y="50.8" size="1.778" layer="95"/>
-<pinref part="ARD_" gate="G$1" pin="TP"/>
+<pinref part="ARD_FB" gate="G$1" pin="TP"/>
 <junction x="-71.12" y="50.8"/>
 </segment>
 <segment>

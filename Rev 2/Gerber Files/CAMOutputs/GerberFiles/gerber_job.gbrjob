@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-07-04T02:40:04Z",
+        "CreationDate": "2019-07-14T20:48:24Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -10,15 +10,15 @@
         "Part": "Single"
     },
     "Overall": {
-        "BoardThickness": 1.84,
-        "LayerNumber": 4,
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
         "Name": {
-            "ProjectId": "Buck V1"
+            "ProjectId": "panel"
         },
         "Owner": "Thomas Kulin <thomask_2002-main@yahoo.ca>",
         "Size": {
-            "X": 77.45,
-            "Y": 51.105
+            "X": 99.8308,
+            "Y": 99.8159
         }
     }
 }

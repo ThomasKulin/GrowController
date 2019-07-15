@@ -9,7 +9,7 @@
 <grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="16" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,8 +22,8 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -157,9 +157,9 @@
 <board>
 <plain>
 <wire x1="0" y1="-0.3175" x2="77.45" y2="-0.3175" width="0" layer="20"/>
-<wire x1="77.45" y1="-0.3175" x2="77.45" y2="50.7875" width="0" layer="20"/>
-<wire x1="77.45" y1="50.7875" x2="0" y2="50.7875" width="0" layer="20"/>
-<wire x1="0" y1="50.7875" x2="0" y2="-0.3175" width="0" layer="20"/>
+<wire x1="77.45" y1="-0.3175" x2="77.45" y2="49.835" width="0" layer="20"/>
+<wire x1="77.45" y1="49.835" x2="0" y2="49.835" width="0" layer="20"/>
+<wire x1="0" y1="49.835" x2="0" y2="-0.3175" width="0" layer="20"/>
 <polygon width="0.1524" layer="29">
 <vertex x="3.175" y="34.925"/>
 <vertex x="3.175" y="27.305"/>
@@ -184,6 +184,9 @@
 <vertex x="69.215" y="2.2225"/>
 <vertex x="69.215" y="9.8425"/>
 </polygon>
+<hole x="50.8" y="4.7625" drill="3.4798"/>
+<hole x="5.08" y="45.72" drill="3.4798"/>
+<hole x="5.08" y="10.16" drill="3.4798"/>
 </plain>
 <libraries>
 <library name="AcceleratedDesigns_Lib">
@@ -3209,39 +3212,39 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="29.845" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="29.21" y="4.445" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="JP1" library="adafruit" package="1X06" value="" x="13.6525" y="5.3975" smashed="yes">
-<attribute name="NAME" x="4.6863" y="6.9088" size="0.508" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="6.0325" y="2.2225" size="1.27" layer="27"/>
+<element name="JP1" library="adafruit" package="1X06" value="" x="13.6525" y="4.7625" smashed="yes">
+<attribute name="NAME" x="4.6863" y="6.2738" size="0.508" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="6.0325" y="1.5875" size="1.27" layer="27"/>
 </element>
 <element name="V_IN" library="testpad" package="TP20R" value="PTR1TP20R" x="16.51" y="17.145" smashed="yes">
 <attribute name="NAME" x="13.9225" y="17.8775" size="0.508" layer="25" font="vector" ratio="15"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="16.51" y="14.605" size="1" layer="37"/>
 <attribute name="VALUE" x="15.748" y="16.129" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="ARD_SHTDWN" library="testpad" package="TP20R" value="PTR1TP20R" x="7.3025" y="7.9375" smashed="yes">
-<attribute name="NAME" x="7.5225" y="9.4775" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="7.3025" y="5.3975" size="1" layer="37"/>
-<attribute name="VALUE" x="6.5405" y="6.9215" size="0.508" layer="27" font="vector" ratio="15"/>
+<element name="ARD_SHTDWN" library="testpad" package="TP20R" value="PTR1TP20R" x="7.3025" y="7.3025" smashed="yes">
+<attribute name="NAME" x="8.1575" y="8.8425" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="7.3025" y="4.7625" size="1" layer="37"/>
+<attribute name="VALUE" x="6.5405" y="6.2865" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="ARD_FB" library="testpad" package="TP20R" value="PTR1TP20R" x="12.3825" y="7.9375" smashed="yes">
-<attribute name="NAME" x="12.6025" y="9.4775" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="12.3825" y="5.3975" size="1" layer="37"/>
-<attribute name="VALUE" x="11.6205" y="6.9215" size="0.508" layer="27" font="vector" ratio="15"/>
+<element name="ARD_FB" library="testpad" package="TP20R" value="PTR1TP20R" x="12.3825" y="7.3025" smashed="yes">
+<attribute name="NAME" x="12.6025" y="8.8425" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="12.3825" y="4.7625" size="1" layer="37"/>
+<attribute name="VALUE" x="11.6205" y="6.2865" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="ARD_CURR" library="testpad" package="TP20R" value="PTR1TP20R" x="9.8425" y="7.9375" smashed="yes">
-<attribute name="NAME" x="10.0625" y="9.4775" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="9.8425" y="5.3975" size="1" layer="37"/>
-<attribute name="VALUE" x="9.0805" y="6.9215" size="0.508" layer="27" font="vector" ratio="15"/>
+<element name="ARD_CURR" library="testpad" package="TP20R" value="PTR1TP20R" x="9.8425" y="7.3025" smashed="yes">
+<attribute name="NAME" x="10.0625" y="8.8425" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="9.8425" y="4.7625" size="1" layer="37"/>
+<attribute name="VALUE" x="9.0805" y="6.2865" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="VCC" library="testpad" package="TP20R" value="PTR1TP20R" x="20.955" y="13.97" smashed="yes">
 <attribute name="NAME" x="19.0025" y="15.02" size="0.508" layer="25" font="vector" ratio="15"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="20.955" y="11.43" size="1" layer="37"/>
 <attribute name="VALUE" x="20.193" y="12.954" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="ARD_VOUT" library="testpad" package="TP20R" value="PTR1TP20R" x="14.9225" y="7.9375" smashed="yes">
-<attribute name="NAME" x="15.46" y="9.4775" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="14.9225" y="5.3975" size="1" layer="37"/>
-<attribute name="VALUE" x="14.1605" y="6.9215" size="0.508" layer="27" font="vector" ratio="15"/>
+<element name="ARD_VOUT" library="testpad" package="TP20R" value="PTR1TP20R" x="14.9225" y="7.3025" smashed="yes">
+<attribute name="NAME" x="15.46" y="8.8425" size="0.508" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="14.9225" y="4.7625" size="1" layer="37"/>
+<attribute name="VALUE" x="14.1605" y="6.2865" size="0.508" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="SW" library="testpad" package="TP20R" value="PTR1TP20R" x="33.3375" y="46.355" smashed="yes">
 <attribute name="NAME" x="32.3375" y="47.405" size="0.508" layer="25" font="vector" ratio="15"/>
@@ -3328,12 +3331,12 @@ design rules under a new name.</description>
 <wire x1="26.82875" y1="12.85875" x2="26.1425" y2="12.1725" width="0.254" layer="1"/>
 <wire x1="26.1425" y1="12.1725" x2="26.035" y2="12.28" width="0.254" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="10.16" y="49.53"/>
+<vertex x="10.16" y="48.895"/>
 <vertex x="10.16" y="42.8625"/>
 <vertex x="33.9725" y="42.8625"/>
 <vertex x="33.9725" y="35.56"/>
 <vertex x="76.835" y="35.56"/>
-<vertex x="76.835" y="49.53"/>
+<vertex x="76.835" y="48.895"/>
 </polygon>
 <wire x1="40.005" y1="42.8225" x2="40.005" y2="37.5384" width="0.3556" layer="1"/>
 <via x="40.005" y="37.5384" extent="1-16" drill="0.35"/>
@@ -3538,30 +3541,30 @@ design rules under a new name.</description>
 <vertex x="0.3175" y="0.3175"/>
 </polygon>
 <polygon width="0.3556" layer="15">
-<vertex x="0.3175" y="50.4825"/>
-<vertex x="77.1525" y="50.4825"/>
+<vertex x="0.3175" y="49.2125"/>
+<vertex x="77.1525" y="49.2125"/>
 <vertex x="77.1525" y="0"/>
 <vertex x="0.3175" y="0"/>
 </polygon>
-<via x="1.5875" y="1.27" extent="1-16" drill="0.35"/>
-<via x="5.08" y="1.27" extent="1-16" drill="0.35"/>
-<via x="10.16" y="1.27" extent="1-16" drill="0.35"/>
-<via x="15.24" y="1.27" extent="1-16" drill="0.35"/>
-<via x="20.32" y="1.27" extent="1-16" drill="0.35"/>
-<via x="25.4" y="1.27" extent="1-16" drill="0.35"/>
+<via x="1.5875" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="5.08" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="10.16" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="15.24" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="20.32" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="25.4" y="0.9525" extent="1-16" drill="0.35"/>
 <via x="1.5875" y="5.08" extent="1-16" drill="0.35"/>
 <via x="1.5875" y="10.16" extent="1-16" drill="0.35"/>
 <via x="1.5875" y="15.24" extent="1-16" drill="0.35"/>
-<via x="30.48" y="1.27" extent="1-16" drill="0.35"/>
-<via x="35.56" y="1.27" extent="1-16" drill="0.35"/>
-<via x="40.64" y="1.27" extent="1-16" drill="0.35"/>
-<via x="45.72" y="1.27" extent="1-16" drill="0.35"/>
-<via x="50.8" y="1.27" extent="1-16" drill="0.35"/>
-<via x="55.88" y="1.27" extent="1-16" drill="0.35"/>
-<via x="60.96" y="1.27" extent="1-16" drill="0.35"/>
-<via x="66.04" y="1.27" extent="1-16" drill="0.35"/>
-<via x="71.12" y="1.27" extent="1-16" drill="0.35"/>
-<via x="75.8825" y="1.27" extent="1-16" drill="0.35"/>
+<via x="30.48" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="35.56" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="40.64" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="45.72" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="50.8" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="55.88" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="60.96" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="66.04" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="71.12" y="0.9525" extent="1-16" drill="0.35"/>
+<via x="75.8825" y="0.9525" extent="1-16" drill="0.35"/>
 <via x="75.8825" y="5.08" extent="1-16" drill="0.35"/>
 <via x="75.8825" y="10.16" extent="1-16" drill="0.35"/>
 <via x="75.8825" y="15.24" extent="1-16" drill="0.35"/>
@@ -3577,22 +3580,22 @@ design rules under a new name.</description>
 <via x="1.5875" y="35.56" extent="1-16" drill="0.35"/>
 <via x="1.5875" y="40.64" extent="1-16" drill="0.35"/>
 <via x="1.5875" y="45.72" extent="1-16" drill="0.35"/>
-<via x="1.5875" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="5.08" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="10.16" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="15.24" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="20.32" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="25.4" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="30.48" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="35.56" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="40.64" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="45.72" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="50.8" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="55.88" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="60.96" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="66.04" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="71.12" y="49.2125" extent="1-16" drill="0.35"/>
-<via x="75.8825" y="49.2125" extent="1-16" drill="0.35"/>
+<via x="1.5875" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="5.08" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="10.16" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="15.24" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="20.32" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="25.4" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="30.48" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="35.56" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="40.64" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="45.72" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="50.8" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="55.88" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="60.96" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="66.04" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="71.12" y="48.5775" extent="1-16" drill="0.35"/>
+<via x="75.8825" y="48.5775" extent="1-16" drill="0.35"/>
 <via x="32.385" y="16.51" extent="1-16" drill="0.25"/>
 <via x="31.4325" y="16.51" extent="1-16" drill="0.25"/>
 <via x="33.3375" y="16.51" extent="1-16" drill="0.25"/>
@@ -3612,10 +3615,10 @@ design rules under a new name.</description>
 <via x="32.385" y="11.7475" extent="1-16" drill="0.25"/>
 <via x="33.3375" y="11.7475" extent="1-16" drill="0.25"/>
 <polygon width="0.1524" layer="2">
-<vertex x="0.635" y="50.4825"/>
+<vertex x="0.635" y="48.895"/>
 <vertex x="0.635" y="0"/>
 <vertex x="77.1525" y="0"/>
-<vertex x="77.1525" y="50.4825"/>
+<vertex x="77.1525" y="48.895"/>
 </polygon>
 <polygon width="0.1524" layer="16">
 <vertex x="1.27" y="24.4475"/>
@@ -3917,9 +3920,9 @@ design rules under a new name.</description>
 <via x="33.655" y="2.54" extent="1-16" drill="0.35"/>
 <wire x1="33.655" y1="2.54" x2="8.5725" y2="2.54" width="0.1524" layer="15"/>
 <wire x1="8.5725" y1="2.54" x2="7.3025" y2="3.81" width="0.1524" layer="15"/>
-<wire x1="7.3025" y1="3.81" x2="7.3025" y2="5.3975" width="0.1524" layer="15"/>
+<wire x1="7.3025" y1="3.81" x2="7.3025" y2="4.7625" width="0.1524" layer="15"/>
 <contactref element="ARD_SHTDWN" pad="TP"/>
-<wire x1="7.3025" y1="5.3975" x2="7.3025" y2="7.9375" width="0.1524" layer="1"/>
+<wire x1="7.3025" y1="4.7625" x2="7.3025" y2="7.3025" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="R_DIS2" pad="1"/>
@@ -3970,7 +3973,7 @@ design rules under a new name.</description>
 <signal name="ARD_FEEDBACK">
 <contactref element="R_FB1" pad="1"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="12.3825" y1="5.3975" x2="12.3825" y2="7.9375" width="0.1524" layer="15"/>
+<wire x1="12.3825" y1="4.7625" x2="12.3825" y2="7.9375" width="0.1524" layer="15"/>
 <wire x1="12.3825" y1="7.9375" x2="14.3002" y2="9.8552" width="0.1524" layer="15"/>
 <wire x1="14.3002" y1="9.8552" x2="37.27375625" y2="9.8552" width="0.1524" layer="15"/>
 <wire x1="37.27375625" y1="9.8552" x2="38.0873" y2="10.66874375" width="0.1524" layer="15"/>
@@ -3981,7 +3984,7 @@ design rules under a new name.</description>
 <via x="49.53" y="15.5575" extent="1-16" drill="0.35"/>
 <wire x1="47.84" y1="14.605" x2="48.7925" y2="15.5575" width="0.1524" layer="1"/>
 <contactref element="ARD_FB" pad="TP"/>
-<wire x1="12.3825" y1="5.3975" x2="12.3825" y2="7.9375" width="0.1524" layer="1"/>
+<wire x1="12.3825" y1="4.7625" x2="12.3825" y2="7.3025" width="0.1524" layer="1"/>
 <wire x1="48.7925" y1="15.5575" x2="49.53" y2="15.5575" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$16">
@@ -4017,10 +4020,10 @@ design rules under a new name.</description>
 <wire x1="37.7825" y1="15.9501" x2="37.7825" y2="10.795" width="0.1524" layer="15"/>
 <wire x1="37.7825" y1="10.795" x2="37.1475" y2="10.16" width="0.1524" layer="15"/>
 <wire x1="11.7475" y1="10.16" x2="9.8425" y2="8.255" width="0.1524" layer="15"/>
-<wire x1="9.8425" y1="8.255" x2="9.8425" y2="5.3975" width="0.1524" layer="15"/>
+<wire x1="9.8425" y1="8.255" x2="9.8425" y2="4.7625" width="0.1524" layer="15"/>
 <wire x1="37.1475" y1="10.16" x2="11.7475" y2="10.16" width="0.1524" layer="15"/>
 <contactref element="ARD_CURR" pad="TP"/>
-<wire x1="9.8425" y1="5.3975" x2="9.8425" y2="7.9375" width="0.1524" layer="1"/>
+<wire x1="9.8425" y1="4.7625" x2="9.8425" y2="7.3025" width="0.1524" layer="1"/>
 </signal>
 <signal name="ARD_VOUT">
 <contactref element="R_VOUT2" pad="1"/>
@@ -4030,7 +4033,7 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="20.535" x2="52.07" y2="22.225" width="0.254" layer="1"/>
 <contactref element="JP1" pad="4"/>
 <wire x1="52.07" y1="22.225" x2="52.07" y2="22.44" width="0.254" layer="1"/>
-<wire x1="14.9225" y1="5.3975" x2="14.9225" y2="7.9375" width="0.1524" layer="15"/>
+<wire x1="14.9225" y1="4.7625" x2="14.9225" y2="7.9375" width="0.1524" layer="15"/>
 <wire x1="14.9225" y1="7.9375" x2="16.5354" y2="9.5504" width="0.1524" layer="15"/>
 <wire x1="16.5354" y1="9.5504" x2="37.4000125" y2="9.5504" width="0.1524" layer="15"/>
 <wire x1="37.4000125" y1="9.5504" x2="38.3921" y2="10.5424875" width="0.1524" layer="15"/>
@@ -4041,7 +4044,7 @@ design rules under a new name.</description>
 <via x="52.07" y="22.225" extent="1-16" drill="0.35"/>
 <wire x1="38.3921" y1="12.24354375" x2="38.84855625" y2="12.7" width="0.1524" layer="15"/>
 <contactref element="ARD_VOUT" pad="TP"/>
-<wire x1="14.9225" y1="5.3975" x2="14.9225" y2="7.9375" width="0.1524" layer="1"/>
+<wire x1="14.9225" y1="4.7625" x2="14.9225" y2="7.3025" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="U1" pad="12"/>
@@ -4083,12 +4086,12 @@ design rules under a new name.</description>
 <contactref element="C_IN4" pad="1"/>
 <wire x1="34.71" y1="4.445" x2="32.965" y2="4.445" width="0.254" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="9.525" y="49.53"/>
+<vertex x="9.525" y="48.895"/>
 <vertex x="9.525" y="41.91"/>
 <vertex x="33.3375" y="41.91"/>
 <vertex x="33.3375" y="25.0825"/>
 <vertex x="0.3175" y="25.0825"/>
-<vertex x="0.3175" y="49.53"/>
+<vertex x="0.3175" y="48.895"/>
 </polygon>
 <wire x1="16.51" y1="19.685" x2="16.51" y2="26.3525" width="0.3556" layer="15"/>
 <via x="16.51" y="26.3525" extent="1-16" drill="0.35"/>

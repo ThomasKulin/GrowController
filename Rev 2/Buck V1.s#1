@@ -182,7 +182,6 @@
 <smd name="21" x="0" y="0" dx="3.4" dy="6.5" layer="1" cream="no"/>
 <wire x1="-1.4986" y1="-3.302" x2="1.4986" y2="-3.302" width="0.2032" layer="21"/>
 <wire x1="-3.556" y1="3.4036" x2="1.4986" y2="3.4036" width="0.2032" layer="21"/>
-<text x="-3.7592" y="3.9624" size="1.27" layer="21" ratio="6" rot="SR0">Designator9</text>
 <wire x1="-2.2098" y1="-3.048" x2="-2.2098" y2="-2.794" width="0.1524" layer="25"/>
 <wire x1="-2.2098" y1="-2.794" x2="-2.2098" y2="-2.3876" width="0.1524" layer="25"/>
 <wire x1="-2.2098" y1="-2.3876" x2="-2.2098" y2="-2.159" width="0.1524" layer="25"/>
@@ -289,7 +288,6 @@
 <wire x1="2.0066" y1="3.2512" x2="2.2098" y2="3.048" width="0.1524" layer="25" curve="-90"/>
 <wire x1="-1.1938" y1="2.6416" x2="-1.1938" y2="1.8542" width="0.1524" layer="25" curve="-180"/>
 <wire x1="-1.1938" y1="1.8542" x2="-1.1938" y2="2.6416" width="0.1524" layer="25" curve="-180"/>
-<text x="-1.8796" y="-1.143" size="1.27" layer="25" ratio="6" rot="SR0">.Designator</text>
 <text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <polygon width="0.0254" layer="31">
 <vertex x="-1.574996875" y="-2.12775"/>
@@ -368,6 +366,7 @@
 <vertex x="-1.574090625" y="-2.13696875"/>
 </polygon>
 <text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -17944,7 +17943,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </class>
 </classes>
 <parts>
-<part name="U1" library="AcceleratedDesigns_Lib" deviceset="LM5117PMHX/NOPB" device="" value="LM5117"/>
+<part name="U1" library="AcceleratedDesigns_Lib" deviceset="LM5117PMHX/NOPB" device="" value="Value"/>
 <part name="D_BOOT" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD123" package3d_urn="urn:adsk.eagle:package:43420/1" value="PMEG10010ELRX"/>
 <part name="C_VCC" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1 UF"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
