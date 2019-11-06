@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-07-14T20:48:24Z",
+        "CreationDate": "2019-07-17T12:18:46Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -10,8 +10,8 @@
         "Part": "Single"
     },
     "Overall": {
-        "BoardThickness": 1.57,
-        "LayerNumber": 2,
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
         "Name": {
             "ProjectId": "panel"
         },
