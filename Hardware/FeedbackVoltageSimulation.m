@@ -10,11 +10,12 @@ clear;
 %         GND
 
 v_ctl = 0.8; % voltage maintained on the feedback pin of LM5117 by control loop
-R1 = 10000:500:20000;
+R1 = 17000:500:17500;
 R2 = 178000;
 R3 = 10000;
 v_fb = 0:0.5:5;
 
+% v_out = (v_ctl*(R2*R3 + R1*R3 + R1*R2) - v_fb*R2*R3)/(R1*R3);
 vout = zeros(length(R1),length(v_fb));
 for i = 1:1:length(R1)
     for j = 1:1:length(v_fb)
