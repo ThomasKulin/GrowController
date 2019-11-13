@@ -38,6 +38,7 @@ public:
     double computePID(PID *pid);
     double computePID(PID *pid, float in, float set);
     void setFB(float fbVoltage);
-    void LED_Driver::setVoltage(float v_out);
+    void setPWM(int pwm);
+    void setVoltage(float v_out);
 };
 #endif

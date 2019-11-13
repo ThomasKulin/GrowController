@@ -23,8 +23,8 @@ LED_Driver::LED_Driver(byte currentPin, byte voltagePin, byte feedbackPin)
     // LED_Driver::D = 0.0;
     //operates on filtered voltage (slower response but very stable)
     LED_Driver::P = 0.037;
-    LED_Driver::I = 0.425;
-    LED_Driver::D = 0.0;
+    LED_Driver::I = 0.0425;
+    LED_Driver::D = 0.001;
     LED_Driver::p_c = new PID(&input, &output, &setpoint, P, I, D, REVERSE);
     LED_Driver::p_v = new PID(&input, &output, &setpoint, P, I, D, REVERSE);
 
@@ -43,7 +43,11 @@ void LED_Driver::init()
     p_c->SetMode(AUTOMATIC);
     p_v->SetMode(AUTOMATIC);
 
-    return;
+    //Set starting values for filtering. Prevents full send condition on startup
+    for(int i =0;i<300;i++){
+        computePID(p_v, 24.0, 1.0);
+        f_v->filterIn(24.0);
+    }
 }
 float LED_Driver::getCurrent()
 { //returns the voltage at current pin
@@ -65,7 +69,7 @@ float LED_Driver::getFilteredCurrent()
 }
 float LED_Driver::getFilteredVoltage()
 { //returns the digitally filtered voltage at voltage pin
-    return f_c->filterIn(getVoltage());
+    return f_v->filterIn(getVoltage());
 }
 double LED_Driver::computePID(PID *pid){
     pid->Compute();
@@ -74,12 +78,17 @@ double LED_Driver::computePID(PID *pid){
 double LED_Driver::computePID(PID *pid, float in, float set){
     input = in;
     setpoint = set;
-    computePID(pid);
+    return computePID(pid);
 }
 
 void LED_Driver::setFB(float fbVoltage)
 {
     int pwm = int(fbVoltage / 5.0 * 255); //8 bit DAC
+    analogWrite(fPin, pwm);
+    return;
+}
+void LED_Driver::setPWM(int pwm)
+{
     analogWrite(fPin, pwm);
     return;
 }
@@ -98,7 +107,6 @@ void LED_Driver::setVoltage(float v_out)
     // // v_out = (0.8*(R2*R3 + R1*R3 + R1*R2) - v_fb*R2*R3)/(R1*R3);
     // float v_fb = -1.0 * (v_out * R1 * R3 - 0.8 * (R2 * R3 + R1 * R3 + R1 * R2)) / (R2 * R3);
     
-    double v_fb = computePID(p_v, getVoltage(), v_out);
-    Serial.println(v_fb);
+    double v_fb = computePID(p_v, getFilteredVoltage(), v_out);
     setFB(float(v_fb));
 }
